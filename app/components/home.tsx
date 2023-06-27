@@ -123,7 +123,7 @@ function Screen() {
       className={
         styles.container +
         ` ${
-          config.tightBorder && !isMobileScreen
+          !config.tightBorder && !isMobileScreen
             ? styles["tight-container"]
             : styles.container
         } ${getLang() === "ar" ? styles["rtl-screen"] : ""}`
