@@ -17,6 +17,7 @@ RUN apk update && apk add --no-cache git
 
 # ENV OPENAI_API_KEY=""
 # ENV CODE=""
+COPY .env.production.local ./
 
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
